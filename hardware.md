@@ -10,7 +10,7 @@
 | `5V`            | red            | mic `VCC`                     |
 | `GND`           | black          | mic `GND`, morse-key, speaker |
 
-## lcd
+## lcd (PCD8544)
 
 | mainboard pin   | color  | lcd     |
 |-----------------|--------|---------|
