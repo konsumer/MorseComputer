@@ -242,8 +242,8 @@ void loop() {
             digitalWrite(PIN_LIGHT, HIGH);
             delay(50);
             digitalWrite(PIN_LIGHT, LOW);
-            charcount--;
             delay(50);
+            charcount--;
           }
         }else{
           // they got it wrong, output letter, wordwrap & display on bottom
