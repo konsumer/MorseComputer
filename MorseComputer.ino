@@ -27,8 +27,6 @@ int selected = MODE_SIMON;
 
 // Software SPI (slower updates, more flexible pin options):
 Adafruit_PCD8544 display = Adafruit_PCD8544(8, 7, 6, 5, 4);
-
-// this could just be tied to ground, but I thought I might eventually want to control it
 #define PIN_LIGHT 9
 
 morseDecoder morseInput(PIN_KEY, MORSE_KEYER, MORSE_ACTIVE_LOW);
@@ -37,7 +35,6 @@ morseEncoder morseOutput(MORSE_OUT);
 
 char simonChars[] = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 int quizSize = sizeof(simonChars) - 2;
-int score = 0;
 
 int speed = 13;
 boolean mute = false;
@@ -130,8 +127,6 @@ void playMorse(char letter){
   }
 }
 
-int scoreoffset = 12;
-
 // make screen for practice mode
 void showSimon(char simonChar) {
   display.clearDisplay();
@@ -141,10 +136,8 @@ void showSimon(char simonChar) {
   display.setTextSize(2);
   display.print(simonChar);
   display.setTextSize(1);
-  display.setCursor(scoreoffset*16, 32);
-  display.print(score);
   display.display();
-  display.setCursor(0, LCDHEIGHT/2);
+  display.setCursor(0, 16);
 }
 
 // generic time-ticker
@@ -241,26 +234,28 @@ void loop() {
           display.print("GOOD!");
           display.display();
           simonChar = simonChars[random(random(quizSize))];
-          score++;
-          // score only goes to 99
-          if (score > 99){
-            score = 0;
-          }
           makeLetter = true;
-          charcount = 0;
-          delay(1000);
+          
+          // re-use charcount for flashing LCD-light
+          charcount = 20;
+          while(charcount){
+            digitalWrite(PIN_LIGHT, HIGH);
+            delay(50);
+            digitalWrite(PIN_LIGHT, LOW);
+            charcount--;
+            delay(50);
+          }
         }else{
           // they got it wrong, output letter, wordwrap & display on bottom
           charcount++;
-          if (charcount > 56 + (14 - scoreoffset)){
+          if (charcount > 56){
             charcount = 0;
             showSimon(simonChar);
-          }else{
+          }
+          if (input != ' '){
             display.setTextSize(1);
             display.print(input);
             display.display();
-          }
-          if (input != ' '){
             playMorse(simonChar);
           }
         }
