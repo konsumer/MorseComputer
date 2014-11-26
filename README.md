@@ -8,6 +8,14 @@ It can:
 *  Understand audio morse code
 *  Play "simon" with you, telling you to key in letters & keeping score
 
+## software
+
+*  [Arduino IDE](http://arduino.cc/en/main/software)
+*  [Adafruit-GFX-Library](https://github.com/adafruit/Adafruit-GFX-Library)
+*  [Adafruit-PCD8544-Nokia-5110-LCD-library](https://github.com/adafruit/Adafruit-PCD8544-Nokia-5110-LCD-library)
+*  [MorseEnDecoder](https://code.google.com/p/morse-endecoder/)
+
+
 ## hardware
 
 I included colors for the wires, so he could fix it easier if something came unhooked. I used an Arduino Nano.
