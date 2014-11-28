@@ -52,7 +52,7 @@ ISR (PCINT1_vect){ toneOut(); } // A0-A5
 ISR (PCINT2_vect){ toneOut(); } // 0-7
 
 void setup() {
-  randomSeed(analogRead(0));
+  randomSeed(analogRead(2));
   pinMode(PIN_KEY, INPUT_PULLUP);
   pinMode(PIN_LIGHT, OUTPUT);
   morseInput.setspeed(speed);
