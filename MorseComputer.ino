@@ -10,8 +10,8 @@
 
 #include <MorseEnDecoder.h>
 
-#define PIN_KEY 2 // (white)
-#define PIN_SPEAKER 3 // (green/white)
+#define PIN_KEY 2
+#define PIN_SPEAKER 3
 #define PIN_MIC A0
 #define MORSE_OUT LED_BUILTIN
 
