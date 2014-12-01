@@ -1,0 +1,695 @@
+
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>README</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+<style>
+
+
+@media print {
+  hr { display: block; page-break-before: always; border-style:none;}
+  table {
+    font-size:  85%;
+  }
+}
+
+</style>
+
+
+</head><body>
+
+<div class="container">
+
+<h1 id="morsecomputer">MorseComputer</h1>
+<p>MorseComputer helps you learn and practice Morse code</p>
+<ul>
+<li>By understanding keyed Morse code,</li>
+<li>By giving feedback on Morse code you enter,</li>
+<li>By decoding audio Morse code, and</li>
+<li>By playing &quot;Simon&quot; with you.</li>
+</ul>
+<h2 id="turning-morse-computer-on-and-off">Turning Morse Computer On and Off</h2>
+<p>The power switch is on the left side of the MorseComputer:</p>
+<p><img src="http://konsumer.github.io/MorseComputer/img/Power Switch.jpg" alt="Power Switch"></p>
+<ul>
+<li>Pull the switch towards you to turn the MorseComputer on.</li>
+<li>Push the switch away from you to turn it off.</li>
+</ul>
+<hr>
+<h2 id="menu">Menu</h2>
+<p>The menu lists three programs (Simon, Show Keyed, and Show Audio) and two settings options (wpm and mute).</p>
+<p><img src="http://konsumer.github.io/MorseComputer/img/Menu.jpg" alt="Menu"></p>
+<ul>
+<li>To scroll through the menu, key a dot.</li>
+<li>To select a program or setting, key a dash when the asterisk is next to that menu item.</li>
+<li>To return to the menu from a program, turn off the MorseComputer and turn it on again.<ul>
+<li>Exception: when in the wpm menu, key very long to return to the menu.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="simon">Simon</h2>
+<p>Simon is a Simon Says-style program; the MorseComputer will play the Morse code tones of the letter or number on the screen, and you repeat it back.</p>
+<p><img src="http://konsumer.github.io/MorseComputer/img/Simon Screen.jpg" alt="Simon Screen"></p>
+<ol>
+<li>Key a dash when the asterisk is next to Simon in the menu.</li>
+<li>You will be directed to the Simon screen, which reads &quot;key this:&quot; with a number or letter following it.</li>
+<li>You will hear the Morse code tones for the letter on the screen.</li>
+<li>Repeat back the Morse code for that letter using the Morse key.</li>
+<li>If you key the correct answer, you will be congratulated by the MorseComputer. GOOD!</li>
+<li>If you key the incorrect answer, your answer will appear on the screen and you will hear the correct Morse code tones again. Keep trying until you get it right.</li>
+</ol>
+<hr>
+<h2 id="show-keyed">Show Keyed</h2>
+<p>Show Keyed will display the letters, numbers, and words you key.</p>
+<p><img src="http://konsumer.github.io/MorseComputer/img/Show Audio and Show Keyed Screen.jpg" alt="Show Audio and Show Keyed Screen"></p>
+<ol>
+<li>Key a dash when the asterisk is next to Show Keyed in the menu.</li>
+<li>You will be directed to the Show Keyed screen, which will be blank until you start keying.</li>
+<li>Key Morse code of your choosing and your letters, numbers, and words will appear on the screen as you type them.</li>
+</ol>
+<hr>
+<h2 id="show-audio">Show Audio</h2>
+<p>The Morse Computer is equipped with a microphone to listen to Morse code from other sources (movies, computers, etc.) and decode it for you.</p>
+<p><img src="http://konsumer.github.io/MorseComputer/img/Show Audio and Show Keyed Screen.jpg" alt="Show Audio and Show Keyed Screen"></p>
+<ol>
+<li>Key a dash when the asterisk is next to Show Audio in the menu.</li>
+<li>You will be directed to the Show Audio screen, which will be blank until you start keying.</li>
+<li>Hold the MorseComputer near your source, and the decoded message will appear on the screen.</li>
+</ol>
+<hr>
+<h2 id="set-wpm">Set wpm</h2>
+<p>You can change the wpm that the programs use under the wpm menu item.</p>
+<p> <img src="http://konsumer.github.io/MorseComputer/img/Current Speed Screen.jpg" alt="Current Speed Screen"></p>
+<ul>
+<li>The current wpm will show in the menu in parentheses next to wpm.</li>
+<li>The default wpm is 13.</li>
+</ul>
+<ol>
+<li>Key a dash when the asterisk is next to wpm in the menu.</li>
+<li>You will be directed to the wpm screen, which will show the current speed.</li>
+<li>Change the speed by keying dots. The new speed will appear on the screen.</li>
+<li>To return to the menu, key a dash.</li>
+</ol>
+<hr>
+<h2 id="mute">Mute</h2>
+<p>You can turn off the Morse code tones when playing. The default is off.</p>
+<p><img src="http://konsumer.github.io/MorseComputer/img/Menu.jpg" alt="Menu"></p>
+<ol>
+<li>Key a dash when the asterisk is next to mute in the menu. This will turn the mute on, and the Morse tones will not play.</li>
+<li>Key another dash to turn the mute off and hear the Morse tones again.</li>
+</ol>
+<hr>
+<h2 id="morse-code">Morse Code</h2>
+<h3 id="numbers-letters">numbers &amp; letters</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>morse</th>
+<th></th>
+<th>morse</th>
+<th></th>
+<th>morse</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td><code>.-</code></td>
+<td>N</td>
+<td><code>-.</code></td>
+<td>0</td>
+<td><code>-----</code></td>
+</tr>
+<tr>
+<td>B</td>
+<td><code>-...</code></td>
+<td>O</td>
+<td><code>---</code></td>
+<td>1</td>
+<td><code>.----</code></td>
+</tr>
+<tr>
+<td>C</td>
+<td><code>-.-.</code></td>
+<td>P</td>
+<td><code>.--.</code></td>
+<td>2</td>
+<td><code>..---</code></td>
+</tr>
+<tr>
+<td>D</td>
+<td><code>-..</code></td>
+<td>Q</td>
+<td><code>--.-</code></td>
+<td>3</td>
+<td><code>...--</code></td>
+</tr>
+<tr>
+<td>E</td>
+<td><code>.</code></td>
+<td>R</td>
+<td><code>.-.</code></td>
+<td>4</td>
+<td><code>....-</code></td>
+</tr>
+<tr>
+<td>F</td>
+<td><code>..-.</code></td>
+<td>S</td>
+<td><code>...</code></td>
+<td>5</td>
+<td><code>.....</code></td>
+</tr>
+<tr>
+<td>G</td>
+<td><code>--.</code></td>
+<td>T</td>
+<td><code>-</code></td>
+<td>6</td>
+<td><code>-....</code></td>
+</tr>
+<tr>
+<td>H</td>
+<td><code>....</code></td>
+<td>U</td>
+<td><code>..-</code></td>
+<td>7</td>
+<td><code>--...</code></td>
+</tr>
+<tr>
+<td>I</td>
+<td><code>..</code></td>
+<td>V</td>
+<td><code>...-</code></td>
+<td>8</td>
+<td><code>---..</code></td>
+</tr>
+<tr>
+<td>J</td>
+<td><code>.---</code></td>
+<td>W</td>
+<td><code>.--</code></td>
+<td>9</td>
+<td><code>----.</code></td>
+</tr>
+<tr>
+<td>K</td>
+<td><code>-.-</code></td>
+<td>X</td>
+<td><code>-..-</code></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>L</td>
+<td><code>.-..</code></td>
+<td>Y</td>
+<td><code>-.--</code></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>M</td>
+<td><code>--</code></td>
+<td>Z</td>
+<td><code>--..</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="punctuation">punctuation</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>meaning</th>
+<th>morse</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>.</td>
+<td>full-stop(period)</td>
+<td><code>.-.-.-</code></td>
+</tr>
+<tr>
+<td>,</td>
+<td>comma</td>
+<td><code>--..--</code></td>
+</tr>
+<tr>
+<td>:</td>
+<td>colon</td>
+<td><code>---...</code></td>
+</tr>
+<tr>
+<td>?</td>
+<td>question mark (query)</td>
+<td><code>..--..</code></td>
+</tr>
+<tr>
+<td>&#39;</td>
+<td>apostrophe</td>
+<td><code>.----.</code></td>
+</tr>
+<tr>
+<td>-</td>
+<td>hyphen</td>
+<td><code>-....-</code></td>
+</tr>
+<tr>
+<td>/</td>
+<td>slash</td>
+<td><code>-..-.</code></td>
+</tr>
+<tr>
+<td>(</td>
+<td>brackets/parentheses</td>
+<td><code>-.--.-</code></td>
+</tr>
+<tr>
+<td>&quot;</td>
+<td>quotation marks</td>
+<td><code>.-..-.</code></td>
+</tr>
+<tr>
+<td>@</td>
+<td>at sign</td>
+<td><code>.--.-.</code></td>
+</tr>
+<tr>
+<td>=</td>
+<td>equals sign</td>
+<td><code>-...-</code></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="abbreviations">Abbreviations</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>K</td>
+<td>Over</td>
+</tr>
+<tr>
+<td>R</td>
+<td>Roger</td>
+</tr>
+<tr>
+<td>CUL</td>
+<td>See you later</td>
+</tr>
+<tr>
+<td>BCNU</td>
+<td>Be seeing you</td>
+</tr>
+<tr>
+<td>UR</td>
+<td>You&#39;re</td>
+</tr>
+<tr>
+<td>RST</td>
+<td>Signal report</td>
+</tr>
+<tr>
+<td>73</td>
+<td>Best regards</td>
+</tr>
+<tr>
+<td>88</td>
+<td>Love and kisses</td>
+</tr>
+</tbody>
+</table>
+<h3 id="prosign">Prosign</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AA</td>
+<td>New line</td>
+</tr>
+<tr>
+<td>AR</td>
+<td>End of message</td>
+</tr>
+<tr>
+<td>AS</td>
+<td>Wait</td>
+</tr>
+<tr>
+<td>BK</td>
+<td>Break</td>
+</tr>
+<tr>
+<td>BT</td>
+<td>New paragraph</td>
+</tr>
+<tr>
+<td>CL</td>
+<td>Going off the air (&quot;clear&quot;)</td>
+</tr>
+<tr>
+<td>CT</td>
+<td>Start copying</td>
+</tr>
+<tr>
+<td>DO</td>
+<td>Change to wabun code</td>
+</tr>
+<tr>
+<td>KN</td>
+<td>Invite a specific station to transmit</td>
+</tr>
+<tr>
+<td>SK</td>
+<td>End of transmission (also VA)</td>
+</tr>
+<tr>
+<td>SN</td>
+<td>Understood (also VE)</td>
+</tr>
+<tr>
+<td>SOS</td>
+<td>Distress message</td>
+</tr>
+</tbody>
+</table>
+<h3 id="qcode">QCode</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>QSL</td>
+<td>I acknowledge receipt</td>
+</tr>
+<tr>
+<td>QSL?</td>
+<td>Do you acknowledge?</td>
+</tr>
+<tr>
+<td>QRX</td>
+<td>Wait</td>
+</tr>
+<tr>
+<td>QRX?</td>
+<td>Should I wait?</td>
+</tr>
+<tr>
+<td>QRV</td>
+<td>I am ready to copy</td>
+</tr>
+<tr>
+<td>QRV?</td>
+<td>Are you ready to copy?</td>
+</tr>
+<tr>
+<td>QRL</td>
+<td>The frequency is in use</td>
+</tr>
+<tr>
+<td>QRL?</td>
+<td>Is the frequency in use?</td>
+</tr>
+<tr>
+<td>QTH</td>
+<td>My location is...</td>
+</tr>
+<tr>
+<td>QTH?</td>
+<td>What is your location?</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="1859-western-union-92-code-">1859 Western Union &quot;92 Code&quot;</h3>
+<p>The 92 Code was first adopted by Western Union in 1859. The reason for this adoption was to reduce bandwidth usage over the telegraph lines and speed transmissions by utilizing a numerical code system for various frequently used phrases.</p>
+<p>The following code was taken from The Telegraph Instructor by G.M. Dodge.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Wait a minute.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Very Important.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>What time is it?</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Where shall I go ahead?</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Have you business for me?</td>
+</tr>
+<tr>
+<td>6</td>
+<td>I am ready.</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Are you ready?</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Close your key, stop breaking.</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Priority business. Wire Chief&#39;s call.</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Keep this circuit closed.</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Do you understand?</td>
+</tr>
+<tr>
+<td>13</td>
+<td>I understand.</td>
+</tr>
+<tr>
+<td>14</td>
+<td>What is the weather?</td>
+</tr>
+<tr>
+<td>15</td>
+<td>For you and others to copy.</td>
+</tr>
+<tr>
+<td>17</td>
+<td>Lightning here.</td>
+</tr>
+<tr>
+<td>18</td>
+<td>What&#39;s the trouble?</td>
+</tr>
+<tr>
+<td>19</td>
+<td>Form 19 train order.</td>
+</tr>
+<tr>
+<td>21</td>
+<td>Stop for meal.</td>
+</tr>
+<tr>
+<td>22</td>
+<td>Wire test.</td>
+</tr>
+<tr>
+<td>23</td>
+<td>All stations copy.</td>
+</tr>
+<tr>
+<td>24</td>
+<td>Repeat this back.</td>
+</tr>
+<tr>
+<td>25</td>
+<td>Busy on another wire.</td>
+</tr>
+<tr>
+<td>26</td>
+<td>Put on ground wire.</td>
+</tr>
+<tr>
+<td>27</td>
+<td>Priority, very important.</td>
+</tr>
+<tr>
+<td>28</td>
+<td>Do you get my writing?.</td>
+</tr>
+<tr>
+<td>29</td>
+<td>Private, deliver in sealed envelope.</td>
+</tr>
+<tr>
+<td>30</td>
+<td>No more - the end.</td>
+</tr>
+<tr>
+<td>31</td>
+<td>Form 31 train order.</td>
+</tr>
+<tr>
+<td>32</td>
+<td>I understand that I am to ....</td>
+</tr>
+<tr>
+<td>33</td>
+<td>Answer is paid.</td>
+</tr>
+<tr>
+<td>34</td>
+<td>Message for all officers.</td>
+</tr>
+<tr>
+<td>35</td>
+<td>You may use my signal to answer this.</td>
+</tr>
+<tr>
+<td>37</td>
+<td>Inform all interested.</td>
+</tr>
+<tr>
+<td>39</td>
+<td>Important, with priority on through wire.</td>
+</tr>
+<tr>
+<td>44</td>
+<td>Answer promptly by wire.</td>
+</tr>
+<tr>
+<td>55</td>
+<td>Important.</td>
+</tr>
+<tr>
+<td>73</td>
+<td>Best Regards.</td>
+</tr>
+<tr>
+<td>77</td>
+<td>I have a message for you.</td>
+</tr>
+<tr>
+<td>88</td>
+<td>Love and kisses.</td>
+</tr>
+<tr>
+<td>91</td>
+<td>Superintendent&#39;s signal.</td>
+</tr>
+<tr>
+<td>92</td>
+<td>Deliver Promptly.</td>
+</tr>
+<tr>
+<td>134</td>
+<td>Who is at the key?</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h4 id="contemporary-usage">Contemporary usage</h4>
+<p>Today, amateur radio operators still use codes <code>73</code> and <code>88</code> profusely and <code>30</code> is used in journalism. Radio-amateurs also occasionally use the code <code>99</code> for &quot;Go to Hell,&quot; though this may be their own addition to the code-table. The other codes have mostly fallen into disuse.</p>
+<h3 id="notes">Notes</h3>
+<p>If the duration of a dot is taken to be one unit then that of a dash is three units. The space between the components of one character is one unit, between characters is three units, and between words seven units. To indicate that a mistake has been made and for the receiver to delete the last word, send ........ (eight dots).</p>
+<p>The prosigns are combinations of two letters sent together with no space in between. The other abbreviations and Q codes are sent with the normal spacing.</p>
+<hr>
+<h2 id="hardware">Hardware</h2>
+<p>Colors for the wires are included in the tables below, so you can fix it easily if something comes unhooked.</p>
+<p>Connect battery <code>+</code> (red) to <code>VIN</code> on mainboard, and <code>-</code> (black) to <code>GND</code>.</p>
+<p><img src="http://konsumer.github.io/MorseComputer/img/key.jpeg" alt="Morse Key"></p>
+<p>1 wire (white) goes to arduino <code>D2</code> , the other (black) goes to <code>GND</code>.</p>
+<p><img src="http://konsumer.github.io/MorseComputer/img/Speaker.jpg" alt="Speaker"></p>
+<p>1 wire goes to <code>D3</code> (white/green), the other goes to <code>GND</code>.</p>
+<p><img src="http://konsumer.github.io/MorseComputer/img/mic.jpeg" alt="microphone"></p>
+<p><code>AUD</code> (yellow) goes to<code>A0</code>, <code>VCC</code> (red) to <code>5V</code>, <code>GND</code> (black) to <code>GND</code></p>
+<p><img src="http://konsumer.github.io/MorseComputer/img/lcd.jpeg" alt="PCD8544"></p>
+<table>
+<thead>
+<tr>
+<th>arduino pin</th>
+<th>color</th>
+<th>lcd</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>D9</code></td>
+<td>white</td>
+<td><code>LIGHT</code></td>
+</tr>
+<tr>
+<td><code>D8</code></td>
+<td>yellow</td>
+<td><code>CLK</code></td>
+</tr>
+<tr>
+<td><code>D7</code></td>
+<td>green</td>
+<td><code>DIN</code></td>
+</tr>
+<tr>
+<td><code>D6</code></td>
+<td>grey</td>
+<td><code>DC</code></td>
+</tr>
+<tr>
+<td><code>D5</code></td>
+<td>purple</td>
+<td><code>CE</code></td>
+</tr>
+<tr>
+<td><code>D4</code></td>
+<td>blue</td>
+<td><code>RST</code></td>
+</tr>
+<tr>
+<td><code>3.3</code></td>
+<td>red</td>
+<td><code>VCC</code></td>
+</tr>
+<tr>
+<td><code>GND</code></td>
+<td>black</td>
+<td><code>GND</code></td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+</body></html>
